@@ -13,7 +13,7 @@ export default function Home() {
         <Suspense fallback={<div>Loading...</div>}>
           <Model />
         </Suspense>
-        <div>
+        <div className="overflow-auto max-w-full">
           <h1 className="text-2xl font-bold text-nowrap"> Model 3D viewer</h1>
           <SyntaxHighlighter language="javascript" style={duotoneDark}>
             {` <model-viewer
